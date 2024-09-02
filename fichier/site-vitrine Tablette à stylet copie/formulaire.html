@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="formulaire.css">
+    </head>
+        <body>
+            <!--barre d'onglet-->
+    <nav>
+        <div class="logo"><a href="accueil.html">
+            <img src="./images/xencelabs-logo.png" alt="Logo" height="60">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Produits</a>
+              <ul class="sous-onglet">
+                <li><a href="./page-Tablettes.html">Tablettes</a></li>
+                <li><a href="./page-Accessoires.html">Accessoires</a></li>
+              </ul>
+            </li>
+            <li><a href="./a propos.html">À propos</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+          </ul>
+          <div class="icones">
+            <a href="formulaire.html"><img src="./images/logoconnexion.png" alt="Connexion" height="20"></a>
+            <a href=""><img src="./images/logorecherche.png" alt="Rechercher" height="40"></a>
+            <a href=""><img src="./images/logopanier.png" alt="Panier" height="26"></a>
+          </div>
+      </nav>
+
+      <form action = "page.php" method="GET">
+            <div class="formulaire">
+                <h2> Connexion </h2>
+                <form id ="loginForm">
+                    <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+                    <input type="password" id="password" placeholder="Mot de passe" required>
+                    <button>Envoyer</button>
+                </form>
+                <p class="create-account"> Pas encore de compte ?<a href="newaccount.html"> Nouveau Compte</a></p>
+            </div>
+            <div class="message-container" id="messageContainer"></div>
+    
+
+            <script>
+                document.getElementById("loginForm").addEventListener("submit", function(event) {
+            // Empêche l'envoi du formulaire par défaut
+            event.preventDefault();
+
+            // Récupère les valeurs des champs du formulaire
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var messageContainer = document.getElementById("messageContainer");
+
+            // Vérifie les identifiants et affiche un message approprié
+            if (username === "Stephen","Saif" && password === "SIO1") {
+                messageContainer.innerText = "Connexion réussie!";
+                messageContainer.classList.remove("error");
+            } else {
+                messageContainer.innerText = "Identifiant ou mot de passe incorrect.";
+                messageContainer.classList.add("error");
+            }
+
+            // Affiche le conteneur de message
+            messageContainer.style.display = "block";
+
+            // Masque le message après 5 secondes
+            setTimeout(function() {
+                messageContainer.style.display = "none";
+            }, 5000);
+        });
+            </script>
+            </form>
+        </body>
+</html>

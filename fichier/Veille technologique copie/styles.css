@@ -1,0 +1,137 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/* Page d'accueil */
+
+#accueil h2 {
+    font-size: 2rem;
+}
+
+#accueil {
+    text-align: center;
+}
+
+#intro {
+    text-align: justify;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 215px;
+}
+
+.one-color{
+    color: #DE5C59;
+}
+
+/* barre d'onglet */
+
+.navigateur {
+    background-color:  #0070cb;
+    overflow: auto;
+}
+
+nav {
+    padding-bottom: 25px;
+    text-align: center;   
+}
+
+nav a{
+    position: relative;
+    top: 10px;
+}
+
+.navigateur a {
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #0070cb;
+    transition: 0.25s;
+}
+
+.navigateur a:hover {
+    background-color: #00B8FF;
+}    
+
+/* Page de l'article 1 */
+
+#article1 {
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 215px;
+}
+
+#article1 h2 {
+    font-size: 3rem;
+}
+
+#img1-article1 {
+    float: left;
+    margin-right: 10px;
+}
+
+#img2-article1 {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Page de l'article 2 */
+
+#article2 {
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 215px;
+}
+
+#article2 h2 {
+    font-size: 3rem;
+}
+
+#img1-article2 {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Page de l'article 3 */
+
+#article3 {
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 215px;
+}
+
+#article3 h2 {
+    font-size: 3rem;
+}
+
+#img1-article3 {
+    float: left;
+    margin-right: 10px;
+}
+
+#img2-article3 {
+    float: right;
+    margin-left: 15px;
+}
+
+/* Mise en page du contenu, notamment avec transition de page */
+
+.contenu:not(:target) {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+  
+.contenu:target {
+    max-height: 4000px; 
+    overflow: hidden;
+    transition: max-height 1s;
+}
