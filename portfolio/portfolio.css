@@ -6,6 +6,27 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .banner {
+        text-align: center;
+    }
+}
+
 body {
     font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
