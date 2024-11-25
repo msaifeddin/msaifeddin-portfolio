@@ -6,27 +6,6 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    .banner {
-        text-align: center;
-    }
-}
-
 body {
     font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -269,5 +248,95 @@ nav a:hover {
     max-width: 160px; /* Taille du logo */
     height: auto;
     margin-bottom: 10px;
+}
+
+/* CV */
+
+/* Section CV */
+
+/* Styles pour la structure principale */
+.cv-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(0, 225, 255), rgb(0, 72, 255), rgb(55, 0, 255));;
+    padding-top: 60px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.cv-sidebar {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv-main {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections de la sidebar */
+.cv-sidebar section {
+    margin-bottom: 20px;
+}
+
+.cv-sidebar h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cv-sidebar p,
+.cv-sidebar ul {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.cv-sidebar ul {
+    padding-left: 20px;
+}
+
+/* Styles spécifiques pour le contenu principal */
+.cv-competences h2,
+.cv-experiences h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cv-competences h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #444;
+}
+
+.cv-competences p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.cv-experiences p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Effets sur les titres */
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: rgb(0, 225, 255);
+    color: #585858;
+    margin-top: 20px;
 }
 
