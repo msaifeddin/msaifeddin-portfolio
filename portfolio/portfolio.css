@@ -160,6 +160,24 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+.imgbox {
+    display: flex; /* Utilise flexbox pour les aligner côte à côte */
+    flex-wrap: wrap; /* Permet un comportement responsive */
+    gap: 25px; /* Espacement entre les images */
+    justify-content: center; /* Centrer les images horizontalement */
+}
+.imgbox img {
+    width: 45%; /* Taille des images : ajustable selon l'écran */
+    max-width: 100%; /* Empêche les images de dépasser leur conteneur */
+    height: auto; /* Garde les proportions des images */
+    border: 2px solid #ccc; /* Optionnel : bordure pour les images */
+    transition: 0.5s;
+}
+.imgbox img:hover {
+    transform: scale(1.30); /* Zoom léger au survol */
+    transition: 0.5s;
+}
+
 #who3 #rapport {
     margin-top: 20px;
 }
