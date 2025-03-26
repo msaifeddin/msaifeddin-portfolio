@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../portfolio/portfolio.css">
+    <title>Certifications</title>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li><a href="../portfolio/identification.html">Identification</a></li>
+         <li><a href="../portfolio/parcours.html">Parcours</a></li>
+         <li><a href="../portfolio/projetfutur.html">Projet de Formation</a></li>
+         <li><a href="../portfolio/realisations.html">Réalisations</a></li>
+         <li><a href="../portfolio/certifications.html">Certifications</a></li>
+         <li><a href="../portfolio/veille.html">Dossier de Veille</a></li>
+        </ul>
+     </nav>
+
+     <div class="banner">
+        <h1>Mes Certifications</h1>
+     </div>
+    
+     <div class="projects-container">
+        <!-- Projet Epi'Solidaire -->
+        <div class="project-card">
+            <img src="../img/Secnumlogo.jpeg" alt="SecNum">
+            <h2>SecNum Académie</h2>
+            <p>BTS SIO (2ème année) - 2024</p>
+            <p>Certifications délivré par l'ANSSI</p>
+            <button class="btnCV" onclick="openModal('modal-secnum')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/pix-social-preview.png" alt="PIX">
+            <h2>PIX</h2>
+            <p>BTS SIO (2ème année) - 2024</p>
+            <p>Obtenu le 06/12/2024</p>
+            <p>Code de vérification : P-V2BVQ72V</p>
+            <button class="btnCV" onclick="openModal('modal-pix')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/1601388765_cisco-networking-academy-logo.png" alt="Cisco Netacad">
+            <h2>Introduction to Cybersecurity</h2>
+            <p>BTS SIO (1ère année) - 2023</p>
+            <p>Délivré par Cisco Networking Academy</p>
+            <button class="btnCV" onclick="openModal('modal-cisco')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/mooc_rgpd.png" alt="Atelier RGPD">
+            <h2>Atelier RGPD</h2>
+            <p>BTS SIO (1ère année) - 2023</p>
+            <p>Délivré par la CNIL</p>
+            <button class="btnCV" onclick="openModal('modal-rgpd')">Détail</button>
+        </div>
+    </div>
+
+    <!-- Fenêtres modales pour détails des projets -->
+    
+    <div id="modal-secnum" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-secnum')">&times;</span>
+            <div class="imgbox">
+                <img src="../img/Secnum.pdf">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pix" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-pix')">&times;</span>
+            <div class="imgbox">
+                <img src="../img/attestation-pix-20241209.pdf">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-cisco" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-cisco')">&times;</span>
+            <div class="imgbox">
+                <img src="../img/intro-to-cyber.pdf">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-rgpd" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-rgpd')">&times;</span>
+            <div class="imgbox">
+                <img src="../img/CNIL _ MODULE 1 _ LE RGPD ET SES NOTIONS CLÉS _ Attestation du Module 1.pdf">
+                <img src="../img/CNIL _ MODULE 2 _ LES PRINCIPES DE LA PROTECTION DES DONNÉES.pdf">
+                <img src="../img/CNIL _ MODULE 3 _ LES RESPONSABILITES DES ACTEURS _ Attestation du Module 3.pdf">
+                <img src="../img/CNIL _ MODULE 4 _ LE DPO ET LES OUTILS DE LA CONFORMITÉ _ Attestation du Module 4.pdf">
+                <img src="../img/CNIL _ MODULE 5 _ LES COLLECTIVITÉS TERRITORIALES _ Attestation du Module 5.pdf">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function openModal(id) {
+    let modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = "flex";
+    }
+}
+
+function closeModal(id) {
+    let modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+    </script>
+</body>
+</html>
