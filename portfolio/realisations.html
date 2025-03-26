@@ -9,12 +9,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="../portfolio/identification.html">Qui suis-je ?</a></li>
-            <li><a href="../portfolio/parcours.html">Mon Parcours</a></li>
-            <li><a href="../portfolio/projetfutur.html">Mon Projet de Formation</a></li>
-            <li><a href="../portfolio/realisations.html">Mes Réalisations</a></li>
-            <li><a href="../portfolio/veille.html">Dossier de Veille</a></li>
-            <li><a href="../portfolio/certification.html">Certifications</a></li>
+         <li><a href="../portfolio/identification.html">Identification</a></li>
+         <li><a href="../portfolio/parcours.html">Parcours</a></li>
+         <li><a href="../portfolio/projetfutur.html">Projet de Formation</a></li>
+         <li><a href="../portfolio/realisations.html">Réalisations</a></li>
+         <li><a href="../portfolio/certifications.html">Certifications</a></li>
+         <li><a href="../portfolio/veille.html">Dossier de Veille</a></li>
         </ul>
      </nav>
 
@@ -22,61 +22,264 @@
         <h1>Mes Réalisations</h1>
      </div>
 
-     <div class="section">
-        <div class="boxed">
-            <div class="flex">
-                <div id="who3">
-                    <h1>Site marchand Turbo Compétition (STAGE)</h1>
-                    <h3>BTS SIO - 2024 - réalisé seul</h3>
-                    <p>Dans le cadre d’un stage de BTS SIO au sein du lycée Parc des Loges à Evry, j’ai eu
-                        l’opportunité de réaliser mon stage au sein d’une boutique de pièces automobiles,
-                        Turbo Compétition, à Lisses. <br>
-                        Durant 7 semaines, j’ai travaillé sur la mise en place d’un site marchand en
-                        répondant aux besoins de mon tuteur de stage tout en m’adaptant à
-                        l’environnement de l’entreprise et ses enjeux.<br>
-                        L’objectif principal de mon stage a été de mettre en application mes compétences
-                        acquises durant la 1ère année de BTS SIO dans un contexte spécifique. <br>
-                        Afin de pouvoir me faciliter la réalisation du site, j'ai utilisé un CMS qui est WordPress, 
-                        avec l'extension WooCommerce pour le cas d'une gestion de boutique, grâce à l'hébergement assuré par IONOS.</p>
-                        <div class="imgbox">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.33.28.png" title="Interface de WordPress">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.33.55.png" title="Page d'accueil">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.34.57.png" title="Nos services">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.35.22.png" title="A-propos">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.36.44.png" title="Page produit">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.37.01.png" title="Panier">
-                            <img src="../img/Capture d’écran 2024-11-26 à 22.37.20.png" title="Gestion des stocks">
-                        </div>
-                </div>
+    <h1 id="title-real">Projets réalisés en formation</h1>
+    
+     <div class="projects-container">
+        <!-- Projet Epi'Solidaire -->
+        <div class="project-card">
+            <img src="../img/nouvellevague.png" alt="Nouvelle Vague">
+            <h2>Nouvelle Vague</h2>
+            <p>BTS SIO (2ème année) - 2025</p>
+            <p>Réalisé en <strong>binôme</strong></p>
+            <button class="btnCV" onclick="openModal('modal-nouvellevague')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/friperie.webp" alt="Fripouilles">
+            <h2>Fripouilles</h2>
+            <p>BTS SIO (2ème année) - 2024</p>
+            <p>Réalisé en <strong>binôme</strong></p>
+            <button class="btnCV" onclick="openModal('modal-fripouilles')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/SIO2Jeux.jpg" alt="SIO2Jeux">
+            <h2>SIO2Jeux</h2>
+            <p>BTS SIO (2ème année) - 2024</p>
+            <p>Réalisé en <strong>solo</strong></p>
+            <button class="btnCV" onclick="openModal('modal-sio2jeux')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/Getcet.png" alt="Epi'Solidaire">
+            <h2>Epi'Solidaire</h2>
+            <p>BTS SIO (2ème année) - 2024</p>
+            <p>Réalisé en <strong>trinôme</strong></p>
+            <button class="btnCV" onclick="openModal('modal-episolidaire')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../img/GLPI.webp" alt="GLPI">
+            <h2>GLPI</h2>
+            <p>BTS SIO (1ère année) - 2024</p>
+            <p>Réalisé en <strong>solo</strong></p>
+            <button class="btnCV" onclick="openModal('modal-glpi')">Détail</button>
+        </div>
+
+        <!-- Projet Xencelabs -->
+        <div class="project-card">
+            <img src="../img/Xencelabs.gif" alt="Xencelabs">
+            <h2>Site vitrine & dynamique Tablette à Stylet (Xencelabs)</h2>
+            <p>BTS SIO (1ère année) - 2023/2024</p>
+            <p>Réalisé en binôme, puis en <strong>solo</strong></p>
+            <button class="btnCV" onclick="openModal('modal-xencelabs')">Détail</button>
+        </div>
+
+        <div class="project-card">
+            <img src="../fichier/Veille technologique copie/images/image-ia-santé.jpeg" alt="IA Santé">
+            <h2>Veille Technologique : l'IA dans la médecine</h2>
+            <p>BTS SIO (1ère année) - 2023 - en continu</p>
+            <p>Réalisé en <strong>solo</strong></p>
+            <button class="btnCV" onclick="openModal('modal-veille')">Détail</button>
+        </div>
+    </div>
+
+    <h1 id="title-real">Stages</h1>
+
+    <div class="projects-container">
+    <!-- Projet Turbo Compétition -->
+        <div class="project-card">
+            <img src="../img/Elia Expert.png" alt="Turbo Compétition">
+            <h2>Elia Expert</h2>
+            <p>BTS SIO (2ème année) - 2025</p>
+            <button class="btnCV" onclick="openModal('modal-elia')">Détail</button>
+        </div>
+        <div class="project-card">
+            <img src="../img/Turbo Competiton.png" alt="Turbo Compétition">
+            <h2>Turbo Competition</h2>
+            <p>BTS SIO (1ère année) - 2024</p>
+            <button class="btnCV" onclick="openModal('modal-turbo')">Détail</button>
+        </div>
+    </div>
+
+    <!-- Fenêtres modales pour détails des projets -->
+    <div id="modal-veille" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-veille')">&times;</span>
+            <h1>Veille Technologique : l'IA dans la médecine</h1>
+            <br>
+            <p><strong>Contexte :</strong> Premier projet de BTS SIO  visant à réaliser une veille technologique sur le sujet de notre choix. J'ai choisi de réaliser une veille sur l'IA dans le domaine de la médecine</p>
+            <p><strong>Période :</strong> 2023 - en continu</p>
+            <p><strong>Réalisé :</strong> En solo</p>
+            <p><strong>Langages et outils :</strong> HTML, CSS, JavaScript, VS Code</p>
+            <p><strong>Méthode :</strong> Google Alerte</p>
+            <p><strong>Travail réalisé :</strong> Afin de réaliser ma veille technologique, j'ai sélectionner une multitude d'article présentant les possibles innovations de l'IA dans le domaine de la santé, et les grandes avancées permises par l'IA. Que ce soit notamment dans le dépistage de cancer, la prédiction de la mort cardiaque subite ou encore le fait qu'elle puisse désormais diagnostique environ 99% des maladies rares</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2025-03-26 à 07.19.38.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2025-03-26 à 07.19.51.png" title="Page produit">
+            </div>
+            <br>
+            <p><strong>Bilan :</strong> J'ai bien aimé ce projet qu'on doit continuellement actualiser car elle nous permet et nous oblige même à nous informer sur un ou des domaines en particulier. J'ai choisi de faire sur le domaine de la santé car il s'agit d'un domaine à fort enjeu ou une multitude d'innovation technique sont possibles et intéressantes.</p>
+        </div>
+    </div>
+
+    <div id="modal-glpi" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-glpi')">&times;</span>
+            <h1>Projet Epi'Solidaire</h1>
+            <br>
+            <p><strong>Contexte :</strong> Premier projet de BTS SIO 2ème année visant à créer une application de gestion d'épicerie solidaire en PHP.</p>
+            <p><strong>Période :</strong> 2024/2025</p>
+            <p><strong>Réalisé :</strong> En trinôme</p>
+            <p><strong>Langages et outils :</strong> PHP, Trello, Visual Studio Code</p>
+            <p><strong>Méthode :</strong> Agile (Trello, sprints)</p>
+            <p><strong>Travail réalisé :</strong> Gestion des stocks, commandes/livraisons, enregistrement des achats</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.14.20.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.16.09.png" title="Page produit">
             </div>
         </div>
     </div>
 
-     <div class="section">
-        <div class="boxed">
-            <div class="flex">
-                <div id="who3">
-                    <h1>Projet Xencelabs : Tablette à Stylet</h1>
-                    <h3>BTS SIO - 2023/2024 - réalisé en binôme, puis seul</h3>
-                    <p>Il s'agit du premier projet de l'année en BTS SIO 1ère année permettant de mettre en application tout ce que nous avions appris lors du 1er semestre en développement web.
-                         L'objectif était de créer un site marchand avec les langages HTML, CSS et JavaScript sur l'éditeur de code Visual Studio Code et le thème qui nous avait été dédié était les tablettes à stylet.
-                         Nous avions tout d'abord réalisé une maquette de notre page d'accueil sur Canva, puis nous avions réalisé un cahier des charges pour noter tous nos besoins et idées pour le site marchand que ce soit les fonctionnalités, les produits à inclure, les codes couleurs... 
-                        <br> Nous nous sommes organisés en se repartissant les taches sur Trello, en ayant pris aussi en compte la méthode Agile afin de pouvoir finir ce projet dans les temps imparti. 
-                    <br>Ce projet nous a permis de solidifier nos connaissances en développement web sur des langages tel que HTML, CSS et JavaScript. <br>
-                    Ensuite, lors de la deuxième partie du projet qui a été réalisé seul, j'ai utilisé le langage PHP afin de dynamiser mon site avec une base de donnée (MySQL). <br>
-                    Cette fois, l'objectif était de dynamiser le site marchand qui n'était qu'au départ qu'un site vitrine grâce à la connexion du site avec une base de donnée avec PHP. <br> Je devais d'abord connecter mon site avec une base de donnée créé sur PHP My Admin, puis j'ai réalisé la fonction de connexion et d'inscription d'un utilisateur dans la base de donnée à travers un formulaire de connexion. Ensuite je devais inclure tous les produits dans la base de donnée et enfin je devais réalisé un panier fonctionnel.</p>
-                    <div class="imgbox">
-                        <img src="../img/Capture d’écran 2024-11-27 à 00.39.47.png" title="Page d'accueil">
-                        <img src="../img/Capture d’écran 2024-11-27 à 00.40.08.png" title="Catalogue">
-                        <img src="../img/Capture d’écran 2024-11-27 à 00.40.25.png" title="Page produit">
-                        <img src="../img/Capture d’écran 2024-11-27 à 00.40.34.png" title="A-propos">
-                    </div>
-                    <br><br><br>
-                    <a href="../fichier/site-vitrine Tablette à stylet copie/accueil.html" target="_blank"><button>Voir</button></a>
-                </div>
+    <div id="modal-fripouilles" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-fripouilles')">&times;</span>
+            <h1>Projet Epi'Solidaire</h1>
+            <br>
+            <p><strong>Contexte :</strong> Premier projet de BTS SIO 2ème année visant à créer une application de gestion d'épicerie solidaire en PHP.</p>
+            <p><strong>Période :</strong> 2024/2025</p>
+            <p><strong>Réalisé :</strong> En trinôme</p>
+            <p><strong>Langages et outils :</strong> PHP, Trello, Visual Studio Code</p>
+            <p><strong>Méthode :</strong> Agile (Trello, sprints)</p>
+            <p><strong>Travail réalisé :</strong> Gestion des stocks, commandes/livraisons, enregistrement des achats</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.14.20.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.16.09.png" title="Page produit">
             </div>
         </div>
     </div>
-    
+
+    <div id="modal-nouvellevague" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-nouvellevague')">&times;</span>
+            <h1>Projet Epi'Solidaire</h1>
+            <br>
+            <p><strong>Contexte :</strong> Premier projet de BTS SIO 2ème année visant à créer une application de gestion d'épicerie solidaire en PHP.</p>
+            <p><strong>Période :</strong> 2024/2025</p>
+            <p><strong>Réalisé :</strong> En trinôme</p>
+            <p><strong>Langages et outils :</strong> PHP, Trello, Visual Studio Code</p>
+            <p><strong>Méthode :</strong> Agile (Trello, sprints)</p>
+            <p><strong>Travail réalisé :</strong> Gestion des stocks, commandes/livraisons, enregistrement des achats</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.14.20.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.16.09.png" title="Page produit">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-sio2jeux" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-sio2jeux')">&times;</span>
+            <h1>Projet Epi'Solidaire</h1>
+            <br>
+            <p><strong>Contexte :</strong> Premier projet de BTS SIO 2ème année visant à créer une application de gestion d'épicerie solidaire en PHP.</p>
+            <p><strong>Période :</strong> 2024/2025</p>
+            <p><strong>Réalisé :</strong> En trinôme</p>
+            <p><strong>Langages et outils :</strong> PHP, Trello, Visual Studio Code</p>
+            <p><strong>Méthode :</strong> Agile (Trello, sprints)</p>
+            <p><strong>Travail réalisé :</strong> Gestion des stocks, commandes/livraisons, enregistrement des achats</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.14.20.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.16.09.png" title="Page produit">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-episolidaire" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-episolidaire')">&times;</span>
+            <h1>Projet Epi'Solidaire</h1>
+            <br>
+            <p><strong>Contexte :</strong> Premier projet de BTS SIO 2ème année visant à créer une application de gestion d'épicerie solidaire en PHP.</p>
+            <p><strong>Période :</strong> 2024/2025</p>
+            <p><strong>Réalisé :</strong> En trinôme</p>
+            <p><strong>Langages et outils :</strong> PHP, Trello, Visual Studio Code</p>
+            <p><strong>Méthode :</strong> Agile (Trello, sprints)</p>
+            <p><strong>Travail réalisé :</strong> Gestion des stocks, commandes/livraisons, enregistrement des achats</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.14.20.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2025-03-10 à 01.16.09.png" title="Page produit">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-xencelabs" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-xencelabs')">&times;</span>
+            <h1>Projet Xencelabs</h1>
+            <p><strong>Contexte :</strong> Projet en BTS SIO 1ère année visant à créer un site marchand de tablettes à stylet en utilisant ses acquis en HTML, CSS, JavaScript, PHP et MySQL.</p>
+            <p><strong>Période :</strong> 2023/2024</p>
+            <p><strong>Réalisé :</strong> En binôme, puis seul</p>
+            <p><strong>Langages et outils :</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+            <p><strong>Méthode :</strong> Agile (Trello, cahier des charges, maquette Canva)</p>
+            <p><strong>Travail réalisé :</strong> Développement du site en HTML/CSS/JS sur le thème du tablette à stylet, puis ajout d'une base de données et d'un panier pour le site dynamique.</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2024-11-27 à 00.39.47.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2024-11-27 à 00.40.25.png" title="Page produit">
+            </div>
+            <br>
+            <p><strong>Bilan :</strong> J'ai grandement apprécié ce projet car il est l'un des premiers qu'on ai fait, mais aussi qu'il s'agit du développement web, que j'apprécie tout particulièrement. De plus, cela m'a permis de consolider mes connaissances en HTML, CSS, JavaScript, PHP et MySQL.</p>
+        </div>
+    </div>
+
+    <div id="modal-elia" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-elia')">&times;</span>
+            <h1>Site marchand Turbo Compétition</h1>
+            <p><strong>Contexte :</strong> Réalisation d’un site e-commerce durant un stage chez Turbo Compétition.</p>
+            <p><strong>Période :</strong> 2024</p>
+            <p><strong>Réalisé :</strong> Seul</p>
+            <p><strong>Langages et outils :</strong> WordPress, WooCommerce, IONOS</p>
+            <p><strong>Méthode :</strong> Développement en autonomie</p>
+            <p><strong>Travail réalisé :</strong> Création d’un site marchand avec gestion de stock et panier</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2024-11-26 à 22.33.55.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2024-11-26 à 22.37.01.png" title="Panier">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-turbo" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-turbo')">&times;</span>
+            <h1>Site marchand Turbo Compétition</h1>
+            <p><strong>Contexte :</strong> Réalisation d’un site e-commerce durant un stage chez Turbo Compétition.</p>
+            <p><strong>Période :</strong> 2024</p>
+            <p><strong>Réalisé :</strong> Seul</p>
+            <p><strong>Langages et outils :</strong> WordPress, WooCommerce, IONOS</p>
+            <p><strong>Méthode :</strong> Développement en autonomie</p>
+            <p><strong>Travail réalisé :</strong> Création d’un site marchand avec gestion de stock et panier</p>
+            <div class="imgbox">
+                <img src="../img/Capture d’écran 2024-11-26 à 22.33.55.png" title="Page d'accueil">
+                <img src="../img/Capture d’écran 2024-11-26 à 22.37.01.png" title="Panier">
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function openModal(id) {
+    let modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = "flex";
+    }
+}
+
+function closeModal(id) {
+    let modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+    </script>
 </body>
 </html>
