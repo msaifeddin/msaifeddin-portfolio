@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-veille.css">
     <title>Veille technologique</title>
 </head>
 <body>
 
   <!--Barre d'onglet-->
 
-  <nav>
-    <a href="../Veille technologique copie/veille-technologie.html">Accueil</a>
-    <a href="../Veille technologique copie/article1.html">Article 1</a>
-    <a href="../Veille technologique copie/article2.html">Article 2</a>
-    <a href="../Veille technologique copie/article3.html">Article 3</a>
-  </nav>
+  <header>
+    <nav class="sidebar">
+        <h1>Veille technologique</h1>
+        <ul>
+            <li><a href="veille-technologie.html">L'Intelligence Artificielle dans la médecine</a></li>
+            <li><a href="article1.html">L'IA au service de la santé - <span class="fine-date">01/03/2023</span></a></li>
+            <li><a href="article2.html">Prédiction de la mort cardiaque subite - <span class="fine-date">06/11/2023</span></a></li>
+            <li><a href="article3.html">Dépistage de cancer - <span class="fine-date">16/10/2023</span></a></li>
+            <li><a href="article4.html">Comment recréer du lien patient/médecin ? - <span class="fine-date">17/07/2024</span></a></li>
+            <li><a href="article5.html">Comment l'IA aide à diagnostiquer les maladies rares ? - <span class="fine-date">07/06/2024</span></a></li>
+            <li><a href="article6.html">L’intelligence artificielle au service de la santé mentale - <span class="fine-date">12/12/2024</span></a></li>
+            <li><a href="article7.html">Une nouvelle intelligence artificielle révolutionnaire repère les cancers avec plus de 99% de précision - <span class="fine-date">24/03/2025</span></a></li>
+        </ul>
+    </nav>
+</header>
 
-  <!--Page d'accueil-->
+  <!--Page d'accueil réadaptée-->
 
-  <div id="accueil" class="contenu">
-    <h1>Veille technologique</h1>
-    <h2><span class="one-color">L'intelligence artificielle</span> dans la <span class="one-color">médecine</span></h2>
-    <img src="./images/image-ia-santé.jpeg" height="450">
-      <div id="intro">
-        <h3>Qu'est-ce que la <span class="one-color">veille technologique</span> ?</h3>
-        <p>La veille informatique se caractérise par un processus de collecte, d'analyse et de diffusion des informations relatives
-          à un domaine technologique spécifique. Elle permet d'identifier ou d'anticiper des innovations par secteurs d'activité.</p>
-        <h3>Quels sont les <span class="one-color">objectifs</span> ?</h3>
-        <p>C'est un moyen de collecter des informations stratégiques sur les concurrents et leurs
-          innovations. <br>
-          En réalisant des recherches fréquentes dans différents domaines susceptibles d'interagir
-          avec vos objectifs, vous créez de nouvelles opportunités de partenariats ou d'innovations.</p>
-        <h3>L'IA dans le domaine de la <span class="one-color">médecine</span></h3>
-        <p>L'intégration de l'intelligence artificielle en médecine représente une avancée significative, redéfinissant la manière
-          dont les soins de santé sont dispensés et optimisant les processus diagnostiques et thérapeutiques. Cette technologie est
-          en constante évolution laissant place à toute forme d'innovation notamment dans le secteur médical. En effet, l'IA est
-          devenu un outil indispensable notamment dans la gestion des traitements à la détection de maladies, tout en exploitant des
-          algorythmes sophistiqués pouvant analyser la masse de données médicales. Elle contribue à une amélioration significative et
-          constante de l'efficacité des soins tout en résuisant les erreurs médicales et améliorer l'accessibilité aux services de santé.</p>
-      </div>
+  <div class="content-accueil">
+    <h1 id="title-accueil">Veille technologique</h1>
+    <h1 id="title-subject">L'Intelligence Artificielle dans le domaine de la <span id="other-color">médecine</span></h2>
+    <img id="img-accueil" src="./images/image-ia-santé.jpeg" height="450" alt="Illustration de l'IA en médecine">
+    
+    <div>
+        <h3 class="h3-accueil">🔎 Qu'est-ce que la <span class="one-color">veille technologique</span> ?</h3>
+        <p>La veille technologique est un processus de surveillance et d’analyse des innovations dans un domaine spécifique. 
+           Elle permet d’anticiper les avancées, d’évaluer les tendances et d’exploiter les nouvelles opportunités technologiques.</p>
+
+        <h3 id="margin-top" class="h3-accueil">🎯 Quels sont les <span class="one-color">objectifs</span> ?</h3>
+        <p>La veille technologique offre plusieurs avantages stratégiques :</p>
+        <ul>
+            <li>Identifier les innovations et tendances du secteur.</li>
+            <li>Optimiser les processus et anticiper les évolutions.</li>
+            <li>Détecter de nouvelles opportunités de recherche et de collaboration.</li>
+            <li>Réduire les risques en s’adaptant aux avancées technologiques.</li>
+        </ul>
+
+        <h3 id="margin-top" class="h3-accueil">🧠 L'IA, une <span class="one-color">révolution</span> pour la médecine</h3>
+        <p>L’intelligence artificielle transforme la médecine à plusieurs niveaux :</p>
+        <ul>
+            <li><strong>Diagnostic précis</strong> 📊 : Analyse avancée des données médicales pour détecter rapidement les maladies.</li>
+            <li><strong>Traitements personnalisés</strong> 💊 : Adaptation des soins selon les caractéristiques génétiques et historiques du patient.</li>
+            <li><strong>Optimisation des ressources</strong> 🏥 : Automatisation des tâches médicales et administratives pour une meilleure prise en charge.</li>
+            <li><strong>Accès amélioré aux soins</strong> 🌍 : Déploiement de solutions IA pour combler les inégalités d’accès aux services médicaux.</li>
+        </ul>
+
+        <p>Grâce à des algorithmes sophistiqués, l’IA permet une amélioration continue des soins, réduisant les erreurs médicales et renforçant l’efficacité des traitements.</p>
+    </div>
   </div>
+  <br><br>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
